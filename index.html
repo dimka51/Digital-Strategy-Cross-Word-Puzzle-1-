@@ -10,16 +10,21 @@
 </head>
 <body>
     <h1>Mein Kreuzworträtsel</h1>
-       <iframe src="https://puzzel.org/de/crossword/play?p=-Oev45_ythddk4fRkgGP
-
+    
+    <!-- Dein Rätsel eingebettet -->
+    <iframe src="https://puzzel.org/de/crossword/play?p=-Oev45_ythddk4fRkgGP"
+            width="800 id="counter">Lädt...</span></p>
 
     <script>
-        // Einfaches Klick-Tracking
-        fetch("https://api.countapi.xyz/hit/meinraetsel.github.io/Digital-Strategy-Cross-Word-Puzzle-1-")
+        // Kostenloses Klick-Tracking mit CountAPI
+        fetch("https://api.countapi.xyz/hit/meinraetsel.github.io/kreuzwortraetsel")
             .then(response => response.json())
-            .then(data => console.log("Besucherzahl:", data.value));
+            .then(data => {
+                document.getElementById('counter').textContent = data.value;
+            });
     </script>
 </body>
 </html>
+
 
 
