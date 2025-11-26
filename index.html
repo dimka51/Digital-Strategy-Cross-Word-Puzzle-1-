@@ -1,30 +1,42 @@
+
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kreuzworträtsel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Strategy Crossword Puzzle</title>
     <style>
-        body { font-family: Arial; text-align: center; margin: 20px; }
-        iframe { border: none; }
+        Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        a.button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #0078D7;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        a.button:hover {
+            background-color: #005a9e;
+        }
     </style>
+    <!-- Google Analytics -->
+    src="https://www.googletagmanager.com/gtag/js?id=YOUR-ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR-ID');
+    </script>
 </head>
 <body>
-    <h1>Mein Kreuzworträtsel</h1>
-    
-    <!-- Dein Rätsel eingebettet -->
-    <iframe src="https://puzzel.org/de/crossword/play?p=-Oev45_ythddk4fRkgGP"
-            width="800 id="counter">Lädt...</span></p>
+    <h1>Digital Strategy Crossword Puzzle</h1>
+    <p>Click the button below to start the puzzle:</p>
+    <a class="button" href="https://dimka51.github.io/Digital-Strategy-Cross-Word-Puzzle-1-/" target="_blank"
 
-    <script>
-        // Kostenloses Klick-Tracking mit CountAPI
-        fetch("https://api.countapi.xyz/hit/meinraetsel.github.io/kreuzwortraetsel")
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('counter').textContent = data.value;
-            });
-    </script>
-</body>
-</html>
 
 
 
